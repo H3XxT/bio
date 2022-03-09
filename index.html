@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&amp;display=swap" rel="stylesheet" />
+    <link
+      href="/cdn.jsdelivr.net/npm/bootstrap%405.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="/ianlunn.github.io/Hover/css/hover.css" rel="stylesheet" />
+    <script src="/cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="/cdn.jsdelivr.net/npm/bootstrap%405.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="/cdn.jsdelivr.net/npm/bootstrap-icons%401.3.0/font/bootstrap-icons.css"
+    />
+    <script src="/code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="/unpkg.com/aos%402.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="/unpkg.com/aos%402.3.1/dist/aos.js"></script>
+    <title>H3X-T</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial;
+        font-size: 17px;
+        background-color: black;
+        font-family: "Kanit", sans-serif;
+      }
+
+      #myVideo {
+        position: fixed;
+        min-width: 100%;
+        min-height: 100%;
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(5px);
+      }
+
+      .img-content {
+        color: #fff;
+        position: absolute !important;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .ml13 {
+        font-size: 3em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+      }
+
+      .ml13 .letter {
+        display: inline-block;
+        line-height: 1em;
+      }
+
+      .content-social {
+        position: fixed;
+        bottom: 0;
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+      }
+
+      .btn-check:focus + .btn,
+      .btn:focus {
+        outline: 0;
+        box-shadow: none;
+      }
+    </style>
+  </head>
+
+  <body id="body">
+    <div class="content">
+      <img
+        id="myVideo"
+        src="https://cdn.discordapp.com/attachments/740561017083527179/950990933741170698/9a41f0defc1684be32969216de4ad82f.png?width=1014&amp;height=676"
+      />
+      <div class="text-center img-content">
+        <img
+          style="
+            width: 200px;
+            border-radius: 100%;
+            -webkit-animation-name: hvr-bob-float, hvr-bob;
+            animation-name: hvr-bob-float, hvr-bob;
+            -webkit-animation-duration: 0.3s, 1.5s;
+            animation-duration: 0.3s, 1.5s;
+            -webkit-animation-delay: 0s, 0.3s;
+            animation-delay: 0s, 0.3s;
+            -webkit-animation-timing-function: ease-out, ease-in-out;
+            animation-timing-function: ease-out, ease-in-out;
+            -webkit-animation-iteration-count: 1, infinite;
+            animation-iteration-count: 1, infinite;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+            -webkit-animation-direction: normal, alternate;
+            animation-direction: normal, alternate;
+          "
+          src="https://cdn.discordapp.com/attachments/740561017083527179/950991746689540126/29dbf6f92d4abeca66882f01d904e829.png?width=559&amp;height=559"
+          alt="H3X-T"
+        />
+        <div>
+          <h1 class="ml13">H3X-T</h1>
+        </div>
+
+        <div>
+          <center data-aos="fade-up" data-aos-delay="800" data-aos-duration="500">
+            <hr style="width: 14%; height: 5px; margin-top: 10px" />
+          </center>
+          <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="500">
+            <span
+              class="txt-rotate"
+              data-period="2000"
+              data-rotate='["supakorn2807@protonmail.com","Supakorn" , "Backend Developer"]'
+            ></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-social">
+        <div>
+          <a href="https://github.com/H3X-T" target="_blank" class="btn hvr-buzz"
+            ><i class="bi bi-github" style="color: white; font-size: 2rem"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var audio = new Audio(
+        "https://cdn.discordapp.com/attachments/889465816121241650/951011746515144704/song.mp3"
+      );
+      $("#body").click(function () {
+        audio.play();
+        audio.volume = 1;
+      });
+      AOS.init();
+      var textWrapper = document.querySelector(".ml13");
+      textWrapper.innerHTML = textWrapper.textContent.replace(
+        /\S/g,
+        "<span class='letter'>$&</span>"
+      );
+
+      anime
+        .timeline({
+          loop: false
+        })
+        .add({
+          targets: ".ml13 .letter",
+          translateY: [100, 0],
+          translateZ: 0,
+          opacity: [0, 1],
+          easing: "easeOutExpo",
+          duration: 1400,
+          delay: (el, i) => 300 + 30 * i
+        });
+      var TxtRotate = function (el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = "";
+        this.tick();
+        this.isDeleting = false;
+      };
+
+      TxtRotate.prototype.tick = function () {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+          this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+          this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
+
+        var that = this;
+        var delta = 300 - Math.random() * 100;
+
+        if (this.isDeleting) {
+          delta /= 2;
+        }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+          delta = this.period;
+          this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === "") {
+          this.isDeleting = false;
+          this.loopNum++;
+          delta = 500;
+        }
+
+        setTimeout(function () {
+          that.tick();
+        }, delta);
+      };
+
+      window.onload = function () {
+        var elements = document.getElementsByClassName("txt-rotate");
+
+        for (var i = 0; i < elements.length; i++) {
+          var toRotate = elements[i].getAttribute("data-rotate");
+          var period = elements[i].getAttribute("data-period");
+          if (toRotate) {
+            new TxtRotate(elements[i], JSON.parse(toRotate), period);
+          }
+        }
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+        document.body.appendChild(css);
+      };
+    </script>
+  </body>
+</html>
