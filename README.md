@@ -7,7 +7,7 @@
 
 # Example
 
-![](https://cdn.discordapp.com/attachments/740561017083527179/955829727229280256/unknown.png)
+![](https://cdn.discordapp.com/attachments/922772649816498217/963726685772083200/unknown.png)
 
 ## Support
 
