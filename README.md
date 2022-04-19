@@ -2,7 +2,7 @@
 
 <h3 align="center">Bio, This project made with HTML CSS JS</h3>
 <h3 align="center">
- <a  href="https://h3x-t.xyz">h3x-t.xyz</a>
+ <a  href="https://h3xxt.xyz">h3x-t.xyz</a>
 </h3>
 
 # Example
