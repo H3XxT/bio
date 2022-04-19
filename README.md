@@ -5,9 +5,9 @@
  <a  href="https://h3xxt.xyz">h3x-t.xyz</a>
 </h3>
 
-# Example
+<!-- # Example
 
-![](https://cdn.discordapp.com/attachments/922772649816498217/963726685772083200/unknown.png)
+![](https://cdn.discordapp.com/attachments/922772649816498217/963726685772083200/unknown.png) -->
 
 ## Support
 
