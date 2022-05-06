@@ -1,4 +1,4 @@
-# h3x-t.xyz
+# bio
 
 <h3 align="center">Bio, This project made with HTML CSS JS</h3>
 <h3 align="center">
