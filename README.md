@@ -1,8 +1,5 @@
 # bio
 
-Inspire by https://zensos.net
-@zensos
-
 ## Contact
 
 <p>
