@@ -29,7 +29,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <title>H3XxT</title>
+    <title>Supakorn</title>
     <style>
       body {
         margin: 0;
@@ -39,7 +39,7 @@
         font-family: "Kanit", sans-serif;
       }
 
-      #bg-pic {
+      #bg {
         position: fixed;
         min-width: 100%;
         min-height: 100%;
@@ -50,7 +50,7 @@
         filter: blur(5px);
       }
 
-      .img-content {
+      .img {
         color: #fff;
         position: absolute !important;
         top: 50%;
@@ -70,7 +70,7 @@
         line-height: 1em;
       }
 
-      .content-social {
+      .contact {
         display: flex;
         position: fixed;
         bottom: 0;
@@ -78,22 +78,13 @@
         width: 100%;
         padding: 20px;
       }
-
-      .btn-check:focus + .btn,
-      .btn:focus {
-        outline: 0;
-        box-shadow: none;
-      }
     </style>
   </head>
 
   <body id="body">
     <div class="content">
-      <img
-        id="bg-pic"
-        src="https://cdn.discordapp.com/attachments/922772649816498217/966894255253635072/unknown.png?width=1014&amp;height=676"
-      />
-      <div class="text-center img-content">
+      <img id="bg" src="https://i.pinimg.com/564x/7f/59/42/7f59422626efb955c8d5d590039dab48.jpg" />
+      <div class="text-center img">
         <img style=" width: 200px; border-radius: 100%; -webkit-animation-name: hvr-bob-float,
         hvr-bob; animation-name: hvr-bob-float, hvr-bob; -webkit-animation-duration: 0.3s, 1.5s;
         animation-duration: 0.3s, 1.5s; -webkit-animation-delay: 0s, 0.3s; animation-delay: 0s,
@@ -105,7 +96,7 @@
         src="https://cdn.discordapp.com/attachments/922772649816498217/966895507597307934/7D9B6CA1-6833-42C7-A94C-58E42DE49529.jpg?width=500&amp;height=500
         alt="H3X-T" />
         <div>
-          <h1 class="ml13">Supakorn Ieamgomol</h1>
+          <h1 class="ml13">Supakorn</h1>
         </div>
 
         <div>
@@ -116,48 +107,40 @@
             <span
               class="txt-rotate"
               data-period="2000"
-              data-rotate='["16 years old", "Student at Debsirin School", "Interested in Web Development"]'
+              data-rotate='["16 years old", "Student at Debsirin school", "Interested in Web Development"]'
             ></span>
           </div>
         </div>
       </div>
 
-      <div class="content-social">
+      <div class="contact">
         <div>
-          <a href="https://github.com/h3xxt" target="_blank" class="btn hvr-buzz">
+          <a href="https://github.com/h3xxt" target="_blank" class="btn">
             <i class="bi bi-github" style="color: white; font-size: 2rem"></i>
           </a>
         </div>
         <div>
-          <a href="https://facebook.com/spkngap" target="_blank" class="btn hvr-buzz">
+          <a href="https://facebook.com/spkngap" target="_blank" class="btn">
             <i class="bi bi-facebook" style="color: white; font-size: 2rem"></i>
           </a>
         </div>
         <div>
-          <a href="https://instagram.com/supakornigm" target="_blank" class="btn hvr-buzz">
+          <a href="https://instagram.com/supakornigm" target="_blank" class="btn">
             <i class="bi bi-instagram" style="color: white; font-size: 2rem"></i>
           </a>
         </div>
         <div>
-          <a
-            href="https://discord.com/users/977487166609457172"
-            target="_blank"
-            class="btn hvr-buzz"
-          >
+          <a href="https://discord.com/users/977487166609457172" target="_blank" class="btn">
             <i class="bi bi-discord" style="color: white; font-size: 2rem"></i>
           </a>
         </div>
         <div>
-          <a
-            href="https://www.linkedin.com/in/supakornieamgomol/"
-            target="_blank"
-            class="btn hvr-buzz"
-          >
+          <a href="https://www.linkedin.com/in/supakornieamgomol/" target="_blank" class="btn">
             <i class="bi bi-linkedin" style="color: white; font-size: 2rem"></i>
           </a>
         </div>
         <div>
-          <a href="https://supakorn.xyz" target="_blank" class="btn hvr-buzz"
+          <a href="https://supakorn.xyz" target="_blank" class="btn"
             ><i class="bi bi-link" style="color: white; font-size: 2rem"></i
           ></a>
         </div>
@@ -166,7 +149,7 @@
 
     <script>
       var audio = new Audio(
-        "https://cdn.discordapp.com/attachments/922772649816498217/966891394390179860/song.mp3"
+        "https://cdn.discordapp.com/attachments/980137483784319026/987010819889959024/X2Download.com_-_Godzilla_feat._Juice_WRLD_Official_Audio_128_kbps.mp3"
       );
       $("#body").click(function () {
         audio.play();
@@ -178,7 +161,6 @@
         /\S/g,
         "<span class='letter'>$&</span>"
       );
-
       anime
         .timeline({
           loop: false

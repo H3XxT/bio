@@ -1,6 +1,7 @@
 # bio
 
-Inspire by zensos.net
+Inspire by https://zensos.net
+@zensos
 
 ## Contact
 
